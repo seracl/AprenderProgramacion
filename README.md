@@ -7,7 +7,7 @@ Summary of python for data science from bigginer to master
 * [Big O notation](#c)
  * [What is an algorithm] (A process or set of steps to complete a certain task)
 * [Problem solving]()
- * Problem Solving approach
+ * [Problem Solving approach]()
    * [Underestand the problem]
    * [Concrete examples]
    * [Break it down]
