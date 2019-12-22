@@ -6,7 +6,7 @@ Summary of python for data science from bigginer to master
 ## Data structures and algorithms
 * [Big O notation](#c)
  * [What is an algorithm] (A process or set of steps to complete a certain task)
-* [Problem solving] ()
+* [Problem solving]()
   * Problem Solving approach
    * [Underestand the problem]
    * [Concrete examples]
@@ -18,6 +18,6 @@ Summary of python for data science from bigginer to master
    * [Multiple pointers]
    * [Sliding window]
    * [Divide and conquer]
-* [Recursion]
+* [Recursion]()
 
 ## Data science
