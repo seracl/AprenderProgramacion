@@ -8,7 +8,7 @@ Summary of python for data science from bigginer to master
  * [What is an algorithm]() (A process or set of steps to complete a certain task)
 * [Problem solving]()
  * [Problem Solving approach]()
-   * [Underestand the problem]()
+   * [Underestand the problem]() (Links or comments)
    * [Concrete examples]()
    * [Break it down]()
    * [Solve or simplify]()
@@ -23,7 +23,7 @@ Summary of python for data science from bigginer to master
 * [Searching algorithms]()
   * [Linear search]()
   * [Binary search]()
-  * [Naive string search]
+  * [Naive string search]()
 * [Sorting algorithms]()
   * [Bubble sort]()
   * [Selection sort]()
