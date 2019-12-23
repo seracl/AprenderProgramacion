@@ -6,9 +6,9 @@ Summary of python for data science from bigginer to master
 * [Data Structures and Algorithms](#Data_structures_and_algorithms)
 * [Data Science](#Data_science)
 
-## Python Basics
+## Python_Basics
 
-## Data structures and algorithms
+## Data_structures_and_algorithms
 * [Big O notation](#c)
  * [What is an algorithm]() (A process or set of steps to complete a certain task)
 * [Problem solving]()
