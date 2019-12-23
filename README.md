@@ -48,4 +48,4 @@ Summary of python for data science from bigginer to master
   * [Djikstra's]()
 * [Dynamic Programming]()
 
-## Data science
+## Data_Science
