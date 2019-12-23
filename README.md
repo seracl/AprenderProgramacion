@@ -1,6 +1,11 @@
 # BootcampPython
 Summary of python for data science from bigginer to master
 
+## Table of contents
+* [Python Basics](#Python Basics)
+* [Data Structures and Algorithms](#Data structures and algorithms)
+* [Data Science](#Data science)
+
 ## Python Basics
 
 ## Data structures and algorithms
