@@ -2,9 +2,9 @@
 Summary of python for data science from bigginer to master
 
 ## Table of contents
-* [Python Basics](##Python Basics)
+* [Python Basics](##Python_Basics)
 * [Data Structures and Algorithms](##Data_structures_and_algorithms)
-* [Data Science](##Data science)
+* [Data Science](##Data_science)
 
 ## Python Basics
 
