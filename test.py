@@ -1,24 +1,32 @@
-class Employee:
-   'Common base class for all employees'
-   empCount = 0
+from random import randint
 
-   def __init__(self, name, salary):
-      self.name = name
-      self.salary = salary
-      Employee.empCount += 1
+mylist = [1, 2, 3]
+help(mylist.insert)
+
+'''result = input('Enter a value here: ')
+print(type(result))
+'''
+# class Employee:
+#    'Common base class for all employees'
+#    empCount = 0
+
+#    def __init__(self, name, salary):
+#       self.name = name
+#       self.salary = salary
+#       Employee.empCount += 1
    
-   def displayCount(self):
-     print ("Total Employee %d" % Employee.empCount)
+#    def displayCount(self):
+#      print ("Total Employee %d" % Employee.empCount)
 
-   def displayEmployee(self):
-      print ("Name : ", self.name,  ", Salary: ", self.salary)
+#    def displayEmployee(self):
+#       print ("Name : ", self.name,  ", Salary: ", self.salary)
 
-# Creating instance objects
-## "This would create first object of Employee class"
-emp1 = Employee("Zara", 2000)
-## "This would create second object of Employee class"
-emp2 = Employee("Manni", 5000)
-# Accessing attributes
-emp1.displayEmployee()
-emp2.displayEmployee()
-print ("Total Employee %d" % Employee.empCount)
+# # Creating instance objects
+# ## "This would create first object of Employee class"
+# emp1 = Employee("Zara", 2000)
+# ## "This would create second object of Employee class"
+# emp2 = Employee("Manni", 5000)
+# # Accessing attributes
+# emp1.displayEmployee()
+# emp2.displayEmployee()
+# print ("Total Employee %d" % Employee.empCount)
