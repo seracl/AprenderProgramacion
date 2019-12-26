@@ -1,7 +1,19 @@
-from random import randint
+name = 'THIS IS A GLOBAL STRING'
 
-mylist = [1, 2, 3]
-help(mylist.insert)
+def greet():
+	name = 'Sammy'
+
+	def hello():
+		print('Hello ' + name)
+	hello()
+
+greet()
+
+
+# from random import randint
+
+# mylist = [1, 2, 3]
+# help(mylist.insert)
 
 '''result = input('Enter a value here: ')
 print(type(result))
