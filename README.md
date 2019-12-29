@@ -3,8 +3,8 @@ Summary of python for data science from bigginer to master
 
 
 ## Table_of_contents
-* [Table_of_contents](#https://docs.python.org/3/) (Link to python Documentation)
-* [Python Basics](#https://docs.python.org/3/library/index.html) (Link to Library Documentation)
+* [Table_of_contents](https://docs.python.org/3/) (Link to python Documentation)
+* [Python Basics](https://docs.python.org/3/library/index.html) (Link to Library Documentation)
 * [Data Structures and Algorithms](#Data_structures_and_algorithms)
 * [Data Science](#Data_science)
 
