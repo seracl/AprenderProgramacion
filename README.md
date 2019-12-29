@@ -1,15 +1,27 @@
 # BootcampPython
 Summary of python for data science from bigginer to master
 
-## Table of contents
-* [Python Basics](#Python_Basics)
+
+## Table_of_contents
+* [Table_of_contents](https://docs.python.org/3/) (Link to python Documentation)
+* [Python Basics](#Python_Basics) (#https://docs.python.org/3/library/index.html)
 * [Data Structures and Algorithms](#Data_structures_and_algorithms)
 * [Data Science](#Data_science)
 
 ## Python_Basics
+* [Data Types and Operations]()
+ * [Numbers](https://www.tutorialspoint.com/python/python_numbers.htm) 
+ * [Strings](https://www.tutorialspoint.com/python/python_strings.htm)
+ * [Lists](https://www.tutorialspoint.com/python/python_lists.htm)
+ * [Tuples](https://www.tutorialspoint.com/python/python_tuples.htm)
+ * [Dictionaries](https://www.tutorialspoint.com/python/python_dictionary.htm)
+ * [Sets]() (This one has no link )
+ * [Basic Operations](https://www.tutorialspoint.com/python/python_basic_operators.htm)
+* [Statements Loops and Functions](https://www.tutorialspoint.com/python/python_loops.htm)
+* [Back to the top](#Table_of_contents) 
 
 ## Data_structures_and_algorithms
-* [Big O notation](#c)
+* [Big O notation](#Table_of_contents)
  * [What is an algorithm]() (A process or set of steps to complete a certain task)
 * [Problem solving]()
  * [Problem Solving approach]()
@@ -24,8 +36,9 @@ Summary of python for data science from bigginer to master
    * [Sliding window]()
    * [Divide and conquer]()
 * [Recursion]()
+* [Back to the top](#Table_of_contents)
 ### Algorithms
-* [Searching algorithms]()
+* [Searching algorithms](#Table_of_contents)
   * [Linear search]()
   * [Binary search]()
   * [Naive string search]()
@@ -47,5 +60,7 @@ Summary of python for data science from bigginer to master
   * [Graphs]() (Simple and transversal)
   * [Djikstra's]()
 * [Dynamic Programming]()
+* [Back to the top](#Table_of_contents)
 
 ## Data_Science
+* [Back to the top](#Table_of_contents)
