@@ -61,11 +61,11 @@ print ('\t')
 ### Tuple unpacking while looping
 print ('Tuple unpacking while looping:'.upper())
 
-print ('Exempel 1:')
+print (' Exempel 1:')
 for item in enumerate(mystring):
   print (item)
 
-print ('Exempel 2:')
+print (' Exempel 2:')
 for index,letter in enumerate(mystring):
   print (index)
   print (letter)
@@ -77,13 +77,13 @@ mylist1 = [1,2,3,4,5,6]
 mylist2 = ['a','b','c','d']
 mylist3 = [100, 200, 300]
 
-print ('Exempel 1:') # Memory allocation returned
+print (' Exempel 1:') # Memory allocation returned
 print(zip(mylist1,mylist2))
 
-print ('Exempel 2:')
+print (' Exempel 2:')
 for item in zip(mylist1,mylist2,mylist3):
   print (item)
-print ('Exempel 3:') # Memory allocation returned
+print (' Exempel 3:') # Memory allocation returned
 print(zip(mylist1,mylist2))
 
 print ('\t')
