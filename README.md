@@ -21,6 +21,7 @@ Summary of python for data science from bigginer to master
 * [Back to the top](#Table_of_contents) 
 
 ## Data_structures_and_algorithms
+* [Data structures](#https://www.tutorialspoint.com/data_structures_algorithms/data_structures_basics.htm)
 * [Big O notation](#Table_of_contents)
  * [What is an algorithm]() (A process or set of steps to complete a certain task)
 * [Problem solving]()
