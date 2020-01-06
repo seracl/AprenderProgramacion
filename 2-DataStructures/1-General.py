@@ -81,5 +81,16 @@ How to Write an Algorithm?
 		It makes it easy for the analyst to analyze the algorithm ignoring all unwanted definitions.
 		A problem can be solved in more than one ways. As such a problem can have different solving algorithms
 
+Algorithm Analysis
+	Efficiency of an algorithm can be analyzed before and after implementation. 
+	Algorithm analysis deals with the execution or running time of various operations involved. 
+	The running time of an operation can be defined as the number of computer instructions executed per operation.
+	- A Priori Analysis: Theoretical analysis where efficiency is measured by assuming that all other factors are constant and have no effect on the implementation.
+	- A Posterior Analysis: Empirical analysis the algorithm is implemented using programming language, and statistics like running time and space required, are collected.
+
+Algorithm Complexity
+	Algorithm complexity f(n) gives the running time and/or storage space required by the algorithm X at a given n(size of input data).
+	− Time Factor: Time is measured by counting the number of key operations such as comparisons in the sorting algorithm.
+	− Space Factor: Space is measured by counting the maximum memory space required by the algorithm.
 
 """
