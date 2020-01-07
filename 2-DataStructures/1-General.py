@@ -93,4 +93,17 @@ Algorithm Complexity
 	− Time Factor: Time is measured by counting the number of key operations such as comparisons in the sorting algorithm.
 	− Space Factor: Space is measured by counting the maximum memory space required by the algorithm.
 
+	Space Complexity: Amount of memory space required by the algorithm in its life cycle, that is equal to the sum of the following two components.
+		- A fixed part: Space required to store data and variables that are independent of the size of the problem: simple variables and constants used, program size, etc.
+		- A variable part: Space required by variables, whose size depends on the size of the problem: dynamic memory allocation, recursion stack space, etc.
+		Space complexity S(P) of any algorithm P is S(P) = C + SP(I), where C is the fixed part and S(I) is the variable part of the algorithm, which depends on instance characteristic I. 
+			Algorithm: SUM(A, B)
+			Step 1 -  START
+			Step 2 -  C ← A + B + 10
+			Step 3 -  Stop
+			Three variables A, B, and C and one constant. Hence S(P) = 1 + 3.
+
+	Time Complexity: Amount of time required by the algorithm to run. 
+		Time requirements are a numerical function T(n), 
+  	where T(n) can be measured as the number of steps, provided each step consumes constant time.
 """
