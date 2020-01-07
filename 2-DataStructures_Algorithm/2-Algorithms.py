@@ -1,46 +1,3 @@
-# Data Structure and Algorithms
-"""
-https://www.tutorialspoint.com/data_structures_algorithms/data_structures_basics.htm
-Almost every enterprise application uses various types of data structures in one or the other way.
-
-Why to Learn Data Structure and Algorithms?: As applications are getting complex and data rich, some problems arise:
-- Data Search: As data grows, search will become slower.
-- Processor speed: Processor speed although being very high, falls limited as the data grows.
-- Multiple requests: As number of users raise, servers will fail if not incremented.
-To solve the above-mentioned problem, data can be organized in such a way that items might be searched instantly
-
-Applications of Data Structure and Algorithms: The following computer problems can be solved using Data Structures
-	- Fibonacci number series
-	- Knapsack problem
-	- Tower of Hanoi
-	- All pair shortest path by Floyd-Warshall
-	- Shortest path by Dijkstra
-	- Project scheduling
-"""
-
-## Data Structures
-"""
-Data Structures: Programmatic way of storing data so that data can be used efficiently.
-
-Data structures foundation terms:
-- Interface: Each data structure has an interface, or set of operations, accepted parameters and return types that a data structure supports. 
-- Implementation: Implementation provides the internal representation and the definition of the algorithms used in the operations of the data structure. 
-
-Characteristics of a Data Structure
-- Correctness: Data structure implementation should implement its interface correctly.
-- Time Complexity: Running time or the execution time of operations of data structure must be as small as possible.
-- Space Complexity: Memory usage of a data structure operation should be as little as possible.
-
-Execution Time Cases: Used to compare data structure's relative execution time (f(n) execution time in function of the f(data) ).
-- Worst Case: Maximum amount of time a data structure operation time can take. 
-	In worst case, operations won't take more than ƒ(n) time where ƒ(n) represents function of n.
-- Average Case: Average execution time of an operation of a data structure. 
-	If an operation takes ƒ(n) time in execution, then m operations will take m*ƒ(n) time.
-- Best Case: An operation's least possible execution time.
-	If execution takes ƒ(n) time, then the actual operation may take time as the random number with ƒ(n) maximum time.
-
-"""
-
 ## Algorithms
 """
 Algorithm: Step by step procedure, independent of programming languages, that creates a set of instructions 
@@ -92,6 +49,63 @@ Algorithm Complexity
 	Algorithm complexity f(n) gives the running time and/or storage space required by the algorithm X at a given n(size of input data).
 	− Time Factor: Time is measured by counting the number of key operations such as comparisons in the sorting algorithm.
 	− Space Factor: Space is measured by counting the maximum memory space required by the algorithm.
+"""
+
+# Algorithm Analysis
+"""
+Asymptotic analysis
+	An algorithm mathematical boundation/framing of its run-time performance.
+	With this analysis we can define the best case, average case, and worst case scenario of an algorithm.
+	This analysis is time dependent, meaning, when there's no input thge algorithm is concluded to work at constant time
+
+	The time required by an algorithm falls under three types:
+	- Best Case:    Minimum time required for program execution.
+	- Average Case: Average time required for program execution.
+	- Worst Case.   Maximum time required for program execution.
+
+Notations
+	Commonly used asymptotic notations to calculate the running time complexity of an algorithm.
+	Big Oh Notation, Ο
+		- The notation Ο(n) is the formal way to express the upper bound of an algorithm's running time. 
+			It measures the worst case time complexity or the longest amount of time an algorithm can possibly take to complete.
+			Ο(f(n)) = { g(n) : there exists c > 0 and n0 such that f(n) ≤ c.g(n) for all n > n0. }
+	Omega Notation, Ω
+		- The notation Ω(n) is the formal way to express the lower bound of an algorithm's running time. 
+			It measures the best case time complexity or the best amount of time an algorithm can possibly take to complete.
+			Ω(f(n)) ≥ { g(n) : there exists c > 0 and n0 such that g(n) ≤ c.f(n) for all n > n0. }
+	Theta Notation, θ
+		- The notation θ(n) is the formal way to express both the lower bound and the upper bound of an algorithm's running time.
+			θ(f(n)) = { g(n) if and only if g(n) =  Ο(f(n)) and g(n) = Ω(f(n)) for all n > n0. }
+	Common Asymptotic Notations
+		- Constant    | Ο(1)
+		- Logarithmic | Ο(log n)
+		- Linear      | Ο(n)
+		- n log n     | Ο(n log n)
+		- Quadratic   | Ο(n2)
+		- Cubic       | Ο(n3)
+		- Polynomial  | nΟ(1)
+		- Exponential | 2Ο(n)
+
+"""
+
+# Problem solving patterns
+"""
+Frequency counter
+Multiple pointers
+Sliding window
+Divide and conquer
+Greedy algorithm
+	In greedy algorithm approach, decisions are made from the given solution domain, which is the closest to optimal. 
+	
+	This approach try to find a localized optimum solution, in an attempt to obtain globally optimized solutions. 
+	However, they do not provide globally optimized solutions.
+Back tracking
+
+
+"""
+
+# Dynamic programming
+"""
 
 	Space Complexity: Amount of memory space required by the algorithm in its life cycle, that is equal to the sum of the following two components.
 		- A fixed part: Space required to store data and variables that are independent of the size of the problem: simple variables and constants used, program size, etc.
