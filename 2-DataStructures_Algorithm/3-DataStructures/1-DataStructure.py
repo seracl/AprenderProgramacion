@@ -20,3 +20,44 @@ Execution Time Cases: Used to compare data structure's relative execution time (
 		If execution takes ƒ(n) time, then the actual operation may take time as the random number with ƒ(n) maximum time.
 
 """
+
+# Data definition and data object 
+"""
+Data Definition defines a particular data with the following characteristics.
+	- Atomic: Definition should define a single concept.
+	- Traceable: Definition should be able to be mapped to some data element.
+	- Accurate: Definition should be unambiguous.
+	- Clear and Concise: Definition should be understandable.
+
+Data Object represents an object having a data.
+"""
+
+# Data types
+"""
+Data type is a way to classify types of data from which the values and the operations to be performed must correspond to  
+	- Built-in Data Type
+	- Derived Data Type
+
+Built-in Data Type
+	Data types for which a language has built-in support.
+		- Integers
+		- Boolean (true, false)
+		- Floating (Decimal numbers)
+		- Character and Strings
+
+Derived Data Type
+	Data types that are implementation independent as they are the result of built-in data types and associated operations on them.
+		- List
+		- Array
+		- Stack
+		- Queue
+
+Basic Operations 
+	The data structure chosen depends on the frequency of the operation to be performed on it.
+		- Traversing
+		- Searching
+		- Insertion
+		- Deletion
+		- Sorting
+		- Merging
+"""
