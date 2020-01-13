@@ -61,6 +61,123 @@ Searching
 	- Array allows random access getItem(index) which has O(1) complexity in comparison 
 	- L-list have O(N) complexity cause of the references
 	- Array is better than LL for search because it has indexing but also cause LL have to traverse all items for search
+Deletion
+	- Removing the first element with linked lists takes O(1) and O(N) for the last.
+	- Removing the first element with array takes O(N) cause the array has to be reconstructed; removing the last takes O(1)
+	- Linked lists are better for deletion, because pointers makes deletion easier
+Memory management
+	- Arrays do not need extra memory
+	- Linked lists need extra memory because of reference/pointers
+	- Arrays are more memory friendly
 
-
+									| Linked Lists | Arrays |
+	-----------------------------------------
+	Search          |     O(N)     |  O(1)  |
+	Insert at start |     O(1)     |  O(N)  |
+	Insert at end   |     O(N)     |  O(1)  |
+	Waste space     |     O(N)     |   0    |
 """
+
+class Node(object):
+	
+	def __init__(self, data):
+		"""
+		Node constructor
+		Contains the data and a reference to the next node
+		The node reference is empty by default
+		"""
+		self.data = data
+		self.nextNode = None
+
+class LinkedList(object):
+
+	def __init__(self):
+		"""
+		Linked List Constructor
+		Store the head/first node of the linked list
+		"""
+		self.head = None
+		self.size = 0
+	
+	def insertStart(self, data):
+		"""
+		Inserting items at the beggining of the list at O(1)
+		"""
+		self.size += 1
+		newNode = Node(data)
+
+		if not self.head:
+			self.head = newNode
+		else:
+			newNode.nextNode = self.head
+			self.head = newNode
+	
+	def remove(self, data):
+	
+		if self.head is None:
+			return
+			
+		self.size = self.size - 1
+		
+		currentNode = self.head
+		previousNode = None
+		
+		while currentNode.data != data:
+			previousNode = currentNode
+			currentNode = currentNode.nextNode
+			
+		if previousNode is None:
+			self.head = currentNode.nextNode
+		else:
+			previousNode.nextNode = currentNode.nextNode
+	
+	def size1(self):
+		return self.size
+	
+	def size2(self):
+		actualNode = self.head
+		size = 0
+
+		while actualNode is not None:
+			size += 1
+			actualNode = actualNode.nextNode
+		
+		return size
+	
+	# O(N)
+	def insertEnd(self, data):
+	
+		self.size = self.size + 1
+		newNode = Node(data)
+		actualNode = self.head
+		
+		while actualNode.nextNode is not None:
+			actualNode = actualNode.nextNode
+			
+		actualNode.nextNode = newNode
+		
+	def traverseList(self):
+	
+		actualNode = self.head
+		
+		while actualNode is not None:
+			print("%d " % actualNode.data)
+			actualNode = actualNode.nextNode
+
+
+			
+linkedlist = LinkedList()
+
+linkedlist.insertStart(12)
+linkedlist.insertStart(122)
+linkedlist.insertStart(3)
+linkedlist.insertEnd(31)
+
+linkedlist.traverseList()
+
+# linkedlist.remove(3)
+# linkedlist.remove(12)
+# linkedlist.remove(122)
+# linkedlist.remove(31)
+
+print(linkedlist.size1())
