@@ -28,3 +28,11 @@ print ('Deleting elements:'.upper())
 print (f"	- Original list: {list1}")
 del list1[-1]
 print (f"	- New list: {list1}")
+
+## Basic List Operations
+print ('Basic List Operations:'.upper())
+print (f"	- Length:         {len(list1)}")
+print (f"	- Concatenation:  {list1 + [4, 5, 6]}")
+print (f"	- Repetition:     {['Hi!'] * 4}")
+print (f"	- Membership:     {3 in list2}")
+print (f"	- Iteration:      {'for x in [1, 2, 3]: print x'}")
