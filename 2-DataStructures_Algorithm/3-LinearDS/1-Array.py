@@ -31,30 +31,30 @@ print('arrayName = array(typecode, [Initializers])')
 array_num = array('i', [1,3,5,7,9,10,15])
 print(f' - Item Size: {array_num.itemsize}')
 
-## Printing array elements
-print('Printing array elements:'.upper())
+## Printing Elements
+print('Printing Elements:'.upper())
 for i in range(len(array_num)):
  print(f' - Element at index {i}: {array_num[i]}')
 
-## Accessing array elements
-print('Accessing array elements:'.upper())
+## Accessing Elements
+print('Accessing Elements:'.upper())
 print(f' - Element {array_num.index(array_num[-1])}: {array_num[-1]}')
 
-## Inserting array elements
-print('Inserting array elements:'.upper())
+## Inserting Elements
+print('Inserting Elements:'.upper())
 array_num.insert(2,60)
 print(f' - New array: {array_num}')
 
-## Deleting array elements
-print('Deleting array elements:'.upper())
+## Deleting Elements
+print('Deleting Elements:'.upper())
 array_num.remove(60)
 print(f' - New array: {array_num}')
 
-## Searching array elements
-print('Searching array elements:'.upper())
+## Searching Elements
+print('Searching Elements:'.upper())
 print(f' - New array: {array_num.index(15)}')
 
-## Updating array elements
-print('Updating array elements:'.upper())
+## Updating Elements
+print('Updating Elements:'.upper())
 array_num[3] = 110
 print(f' - New array: {array_num}')

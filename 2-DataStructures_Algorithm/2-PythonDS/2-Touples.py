@@ -21,24 +21,24 @@ print (f"	- Tup 1: {tup1}")
 print (f"	- Tup 2: {tup2}")
 print (f"	- Tup 3: {tup3}")
 
-## Accessing Values
-print('Accessing Values:'.upper())
+## Accessing Elements
+print('Accessing Elements:'.upper())
 print (f"	- tup1[0]: {tup1[0]}")
 print (f"	- tup2[1:5]: {tup2[1:5]}")
 
-## Updating Tuples
-print ('Updating Tuples:'.upper())
+## Updating Elements
+print ('Updating Elements:'.upper())
 tup3 = tup2 + tup1
 print (f"	- tup3: {tup3}")
 
-## Delete Tuple Elements
-print ('Delete Tuple Elements:'.upper())
+## Delete Elements
+print ('Delete Elements:'.upper())
 print (f"	- Original touple: {tup3}")
 #del tup3
 #print(f"	- Updated touple: {tup3}")
 
-## Basic Touple Operations
-print ('Basic Touple Operations:'.upper())
+## Basic Operations
+print ('Basic Operations:'.upper())
 print (f"	- Length:         {len(tup1)}")
 print (f"	- Concatenation:  {tup1 + tup2}")
 print (f"	- Repetition:     {('Hi!') * 4}")
