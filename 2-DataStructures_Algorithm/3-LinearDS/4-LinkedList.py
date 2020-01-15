@@ -73,3 +73,103 @@ Memory management
 
 # Creation of Linked list
 print ('Creation of Linked list:'.upper())
+class Node:
+	def __init__(self, data=None):
+		# Defining the node: data and reference
+		self.data = data
+		self.nexNode = None
+
+class LinkedList:
+	def __init__(self):
+		self.head = None
+		self.size = 0
+	
+	# O(1)
+	def insertStart(self, data):
+		self.size += 1
+		newNode = Node(data)
+		if not self.head:
+			# If the head is empty, pass Node[data+reference] into it
+			self.head = newNode
+		else:
+			# if the node isn't empty set a its reference from null to next
+			newNode.nexNode = self.head
+			# Insert a new node at the beggining
+			self.head = newNode
+	
+	def size1(self):
+		return self.size
+	
+	def size2(self):
+		actualNode = self.head
+		size = 0
+		while actualNode is not None:
+			size += 1
+			actualNode = actualNode.nexNode
+		return size
+	
+	# O(N)
+	def insertEnd(self, data):
+		self.size += 1
+		newNode = Node(data)
+		actualNode = self.head
+		while actualNode.nexNode is not None:
+			actualNode = actualNode.nexNode
+		actualNode.nexNode = newNode
+
+	
+	def traverseList(self):
+		actualNode = self.head
+		while actualNode is not None:
+			print('%d' % actualNode.data)
+			actualNode = actualNode.nexNode
+	
+	def remove(self, data):
+		if self.head is None:
+			return
+		self.size = self.size - 1
+		currentNode = self.head
+		previousNode = None
+		while currentNode.data != data:
+			previousNode = currentNode
+			currentNode = currentNode.nexNode
+		if previousNode is None:
+			self.head = currentNode.nexNode
+		else:
+			previousNode.nexNode = currentNode.nexNode
+
+
+	
+	def printlist(self):
+		momo = self.head
+		if momo is not None:
+			print(f'index[{self.size}]: {momo.data}')
+			momo = momo.nexNode
+
+linkedlist = LinkedList()
+
+linkedlist.insertStart(12)
+linkedlist.printlist()
+linkedlist.insertStart(122)
+linkedlist.printlist()
+linkedlist.insertStart(3)
+linkedlist.printlist()
+linkedlist.insertStart(100)
+linkedlist.printlist()
+linkedlist.insertStart(100)
+linkedlist.printlist()
+linkedlist.insertStart(112)
+linkedlist.printlist()
+linkedlist.insertStart(2)
+linkedlist.printlist()
+
+linkedlist.remove(3)
+# linkedlist.remove(12)
+# linkedlist.remove(122)
+# linkedlist.remove(31)
+
+linkedlist.traverseList()
+print(linkedlist.size1())
+s1 = linkedlist.size1()
+s2 = linkedlist.size2()
+print(s1, s2)
