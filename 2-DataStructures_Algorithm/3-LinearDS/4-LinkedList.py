@@ -71,8 +71,8 @@ Memory management
 	Waste space     |     O(N)     |   0    |
 """
 
-# Creation of Linked list
-print ('Creation of Linked list:'.upper())
+# Single Linked list
+print ('Single Linked list:'.upper())
 class Node:
 	def __init__(self, data=None):
 		# Defining the node: data and reference
@@ -97,6 +97,12 @@ class LinkedList:
 			# Insert a new node at the beggining
 			self.head = newNode
 	
+	def printlist(self):
+		momo = self.head
+		if momo is not None:
+			print(f'index[{self.size}]: {momo.data}')
+			momo = momo.nexNode
+	
 	def size1(self):
 		return self.size
 	
@@ -117,7 +123,6 @@ class LinkedList:
 			actualNode = actualNode.nexNode
 		actualNode.nexNode = newNode
 
-	
 	def traverseList(self):
 		actualNode = self.head
 		while actualNode is not None:
@@ -138,38 +143,86 @@ class LinkedList:
 		else:
 			previousNode.nexNode = currentNode.nexNode
 
+# Double Linked list
+# https://stackabuse.com/doubly-linked-list-with-python-examples/
+print('Double Linked list:'.upper())
+class Nodes:
+	def __init__(self, data):
+		self.item = data
+		self.nref = None
+		self.pref = None
 
-	
-	def printlist(self):
-		momo = self.head
-		if momo is not None:
-			print(f'index[{self.size}]: {momo.data}')
-			momo = momo.nexNode
+class DoublyLinkedList:
+	def __init__(self):
+		# Constructor
+		self.start_node = None
+	def insert_in_emptylist(self, data):
+		# Inserting Items in Empty List
+		if self.start_node is None:
+			new_node = Nodes(data)
+			self.start_node = new_node
+		else:
+			print("list is not empty")
+	def insert_at_start(self, data):
+		# Inserting Items at the Start
+		if self.start_node is None:
+			new_node = Nodes(data)
+			self.start_node = new_node
+			print("node inserted")
+			return
+		new_node = Nodes(data)
+		new_node.nref = self.start_node
+		self.start_node.pref = new_node
+		self.start_node = new_node
+	def insert_at_end(self, data):
+		# Inserting Items at the End
+		if self.start_node is None:
+			new_node = Nodes(data)
+			self.start_node = new_node
+			return
+		n = self.start_node
+		while n.nref is not None:
+			n = n.nref
+		new_node = Nodes(data)
+		n.nref = new_node
+		new_node.pref = n
+	def traverse_list(self):
+		# Traversing List
+		if self.start_node is None:
+			print("List has no element")
+			return
+		else:
+			n = self.start_node
+			while n is not None:
+				print(n.item , " ")
+				n = n.nref
 
-linkedlist = LinkedList()
 
-linkedlist.insertStart(12)
-linkedlist.printlist()
-linkedlist.insertStart(122)
-linkedlist.printlist()
-linkedlist.insertStart(3)
-linkedlist.printlist()
-linkedlist.insertStart(100)
-linkedlist.printlist()
-linkedlist.insertStart(100)
-linkedlist.printlist()
-linkedlist.insertStart(112)
-linkedlist.printlist()
-linkedlist.insertStart(2)
-linkedlist.printlist()
+if __name__ == "__main__":
+	linkedlist = LinkedList()
 
-linkedlist.remove(3)
-# linkedlist.remove(12)
-# linkedlist.remove(122)
-# linkedlist.remove(31)
+	linkedlist.insertStart(12)
+	linkedlist.printlist()
+	linkedlist.insertStart(122)
+	linkedlist.printlist()
+	linkedlist.insertStart(3)
+	linkedlist.printlist()
+	linkedlist.insertStart(100)
+	linkedlist.printlist()
+	linkedlist.insertStart(100)
+	linkedlist.printlist()
+	linkedlist.insertStart(112)
+	linkedlist.printlist()
+	linkedlist.insertStart(2)
+	linkedlist.printlist()
 
-linkedlist.traverseList()
-print(linkedlist.size1())
-s1 = linkedlist.size1()
-s2 = linkedlist.size2()
-print(s1, s2)
+	linkedlist.remove(3)
+	# linkedlist.remove(12)
+	# linkedlist.remove(122)
+	# linkedlist.remove(31)
+
+	linkedlist.traverseList()
+	print(linkedlist.size1())
+	s1 = linkedlist.size1()
+	s2 = linkedlist.size2()
+	print(s1, s2)
