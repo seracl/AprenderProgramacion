@@ -6,7 +6,7 @@ Strings are contiguous and ordered sequence of characters represented in the quo
     Indexing start at 0 in the beginning and -1 at the end of the string
     The plus (+) sign is the string concatenation operator and the asterisk (*) is the repetition operator.
 '''
-str = 'Hello World!'
+str = '5c039ba3fa0cf703353fa4529af0602210dfc81c85b'
 
 print ('Strings general:'.upper())
 print ('Accessing Values in Strings:')
