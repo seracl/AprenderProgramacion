@@ -1,5 +1,24 @@
+# QUEQUE
+"""
+Basic operations:
+	- Insert enqueue()
+	- Delete dequeue()
+	- peek()
+FIFO structure: first in, first out
+Can be implemented both ith dynamic arrays or linkedlists
 
-#FIFO - first -> first
+Applications:
+	- Important when implementing the Brathfurt Searcg graph algorithm
+	- When a resoiurce is shared between consumers (threads) they're stored in a queue
+	- CPU scheduling
+	- Asynchronously transfer data (data isn't recived at the same rate as sent) between processes
+	- IO buffers
+	- Operational research applications or stochastic models relies on queues
+
+"""
+
+
+
 
 class Queue:
 
