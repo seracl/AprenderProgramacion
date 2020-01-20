@@ -70,15 +70,17 @@ Memory management
 	Insert at end   |     O(N)     |  O(1)  |
 	Waste space     |     O(N)     |   0    |
 """
-
-# Single Linked list
-print ('Single Linked list:'.upper())
+# Linked list node
 class Node:
 	def __init__(self, data=None):
 		# Defining the node: data and reference
 		self.data = data
+		self.preNode = None
 		self.nexNode = None
 
+# Single Linked list
+# https://stackabuse.com/doubly-linked-list-with-python-examples/
+print ('Single Linked list:'.upper())
 class LinkedList:
 	def __init__(self):
 		self.head = None
@@ -144,14 +146,7 @@ class LinkedList:
 			previousNode.nexNode = currentNode.nexNode
 
 # Double Linked list
-# https://stackabuse.com/doubly-linked-list-with-python-examples/
-print('Double Linked list:'.upper())
-class Nodes:
-	def __init__(self, data):
-		self.item = data
-		self.nref = None
-		self.pref = None
-
+print ('Double Linked list:'.upper())
 class DoublyLinkedList:
 	def __init__(self):
 		# Constructor
@@ -197,8 +192,11 @@ class DoublyLinkedList:
 				print(n.item , " ")
 				n = n.nref
 
+# Circular Linked list
+print ('Circular Linked list:'.upper())
 
 if __name__ == "__main__":
+	# Single Linked list
 	linkedlist = LinkedList()
 
 	linkedlist.insertStart(12)
@@ -226,3 +224,7 @@ if __name__ == "__main__":
 	s1 = linkedlist.size1()
 	s2 = linkedlist.size2()
 	print(s1, s2)
+
+	# Double Linked list
+
+	# Circular Linked list
