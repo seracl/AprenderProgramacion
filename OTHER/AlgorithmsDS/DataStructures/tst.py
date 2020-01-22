@@ -66,5 +66,6 @@ if __name__ == "__main__":
 	tst.put("apple",100)
 	tst.put("orange",200)
 	
+	print(tst)
 	print( tst.get("orange") )
 		
