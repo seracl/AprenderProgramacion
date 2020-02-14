@@ -1,0 +1,14 @@
+body {
+  text-align: center;
+  background-color: #283149;
+}
+
+.big-title {
+    font-size: 10rem;
+    color: yellow;
+    font-family: cursive;
+}
+
+.margin-50 {
+    margin: 50px;
+}

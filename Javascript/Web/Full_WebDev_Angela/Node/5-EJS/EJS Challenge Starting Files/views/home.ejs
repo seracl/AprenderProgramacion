@@ -1,0 +1,22 @@
+<%- include("partials/header") -%>
+
+<div>
+    <h1><%= Title %></h1>
+    <p class="entryBody"><%= description %></p>
+</div>
+
+
+<div class="textlimit">
+    <% posts.forEach(function(posts) { %>
+        <div>
+        <h2><a href="post/<%= posts.topic %>"><%= posts.topic %></a></h2>
+        </div>
+        <p class=".entryBody">
+            <strong><%= posts.date + ": "%></strong> 
+            <%= posts.entry %>
+        </p>
+    <% }); %>
+</div>
+
+
+<%- include("partials/footer") -%>
